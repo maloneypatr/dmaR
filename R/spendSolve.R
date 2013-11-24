@@ -1,8 +1,11 @@
-spendSolve <- function(df, yvar = NULL, xvar = NULL, goal = NULL){
+spendSolve <- 
+function(df, yvar = NULL, xvar = NULL, ylog = T, xlog = T, goal = NULL){
   df <- df
   yvar <- eval(substitute(df$yvar))
+  yvar <- ifelse(ylog, log(yvar), yvar)
   xvar <- eval(substitute(df$xvar))
-  model <- lm(log(yvar) ~ log(xvar), data = df)
+  xvar <- ifelse(xlog, log(xvar), xvar)
+  model <- lm(yvar ~ xvar, data = df)
   intercept <- data.frame(summary(model)$coef)$Estimate[1]
   slope <- data.frame(summary(model)$coef)$Estimate[2]
   goalStep1 <- log(goal) - intercept

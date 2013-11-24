@@ -1,6 +1,7 @@
-decomma <- function(x, numeric = F){
+decomma <- function(x, convert = F){
   require(stringr)
   x <- str_replace(x, ',', '')
-  x <- ifelse(numeric, as.numeric(x), x)
-  return(x)
+  if(convert)
+    return(as.numeric(x)) else 
+      x
 }
