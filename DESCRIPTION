@@ -1,9 +1,9 @@
 Package: dmaR
 Type: Package
-Title: What the package does (short line)
+Title: An R Package for Digital Media Analytics
 Version: 1.0
-Date: 2013-11-21
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Date: 2013-11-24
+Author: Patrick Maloney
+Maintainer: Patrick Maloney <maloneypatr@gmail.com>
+Description: dmaR is a collection of functions that are routinely used in the everyday analysis of digital media.
+License: GPL
