@@ -1,8 +1,7 @@
-dedollar <- function(x, fillblanks = NULL, convert = FALSE){
+dedollar <- function(x, convert = FALSE){
   require(stringr)
-  xchar <- str_replace(x, '\\$', '')
-  xfill <- ifelse(xchar == '', fillblanks, xchar)
+  x <- str_replace(x, '\\$', '')
   if(convert)
-    return(as.numeric(xfill)) else 
-      xfill
+    return(as.numeric(x)) else 
+      x
 }
