@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #' Remove the dollar sign from a vector
 #' 
 #' Remove the dollar sign from a vector
@@ -18,16 +17,10 @@
 #' [1] 3.44   42.33
 #' 
 #' @export
-=======
->>>>>>> 3838788e4ba1f184596a7c2dd3d4a0c813044161
+
 dedollar <- function(x, convert = FALSE){
   require(stringr)
   x <- str_replace(x, '\\$', '')
   if(convert)
     return(as.numeric(x)) else 
       x
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 3838788e4ba1f184596a7c2dd3d4a0c813044161
