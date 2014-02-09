@@ -9,9 +9,6 @@ vbr <- function(df, dim = NULL, spend = NULL, metric = NULL, avg = T){
     vbr <- ratio_wo_dim - (sum(spend)/sum(metric))
     average <- sum(spend)/sum(metric)
     avg_vbr <- average + vbr
-    if (!avg) {
-      return(vbr)
-    } else {
-    return(avg_vbr)
-    }
+    answer <- ifelse(!avg, vbr, avg_vbr)
+    return(answer)
 }
