@@ -10,4 +10,4 @@ License: GPL
 Depends:
     ggplot2, stringr, qdap	
 Collate:
-    'vbr.r'
+    'vbr.R'
