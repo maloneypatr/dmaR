@@ -24,3 +24,4 @@ dedollar <- function(x, convert = FALSE){
   if(convert)
     return(as.numeric(x)) else 
       x
+}
