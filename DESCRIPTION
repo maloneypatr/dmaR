@@ -7,3 +7,7 @@ Author: Patrick Maloney
 Maintainer: Patrick Maloney <maloneypatr@gmail.com>
 Description: dmaR is a collection of functions that are routinely used in the everyday analysis of digital media.
 License: GPL
+Depends:
+    ggplot2, stringr, qdap	
+Collate:
+    'vbr.r'
