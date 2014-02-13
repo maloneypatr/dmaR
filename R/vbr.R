@@ -1,4 +1,5 @@
-vbr <- function(df = NULL, spend = NULL, metric = NULL, avg = T){
+vbr <- function(df = NULL, spend = NULL, 
+                metric = NULL, type = 'average'){
     if(is.null(df)){
       spend = spend 
       metric = metric
@@ -12,10 +13,12 @@ vbr <- function(df = NULL, spend = NULL, metric = NULL, avg = T){
     ratio_wo_dim <- spend_wo_dim/metric_wo_dim
     vbr <- ratio_wo_dim - (sum(spend)/sum(metric))
     average <- sum(spend)/sum(metric)
-    avg_vbr <- average + vbr
-    if(!avg) 
+    index <- (vbr + average)/average
+    if(type == 'index')
+      answer <- round(index*100, 0)
+    else if(type == 'absolute')
       answer <- vbr
-    else 
-      answer <- avg_vbr
+    else
+      answer <- average + vbr
     return(answer)
 }
