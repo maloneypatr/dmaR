@@ -32,3 +32,5 @@ Collate:
     'select.R'
     'spendSolve.R'
     'standardize.R'
+    'xlFile.R'
+    'csvFile.R'
