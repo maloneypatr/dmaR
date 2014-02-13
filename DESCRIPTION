@@ -12,6 +12,7 @@ Depends:
 Collate:
     'vbr.R'
     'cpa.R'
+    'listToXL.R'
     'cpc.R'
     'cpm.R'
     'ctr.R'
