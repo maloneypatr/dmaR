@@ -29,7 +29,6 @@ Collate:
     'listNames.R'
     'listUniques.R'
     'rgbx.R'
-    'select.R'
     'spendSolve.R'
     'standardize.R'
     'xlFile.R'
