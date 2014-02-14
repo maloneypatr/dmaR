@@ -1,3 +1,4 @@
-csvFile <- function(x){
-  paste(x, '_', Sys.Date(), '.csv', sep = '')
+csvFile <- function(data, fileName){
+  fileName <- paste(fileName, '_', Sys.Date(), '.csv', sep = '')
+  write.csv(data, fileName, row.names = F)
 }
