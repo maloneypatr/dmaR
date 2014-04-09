@@ -28,4 +28,3 @@ Collate:
     'rgbx.R'
     'spendSolve.R'
     'standardize.R'
-    'install_load.R'
