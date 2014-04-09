@@ -29,3 +29,4 @@ Collate:
     'spendSolve.R'
     'standardize.R'
     'optimizer.R'
+    'install_load.R'
