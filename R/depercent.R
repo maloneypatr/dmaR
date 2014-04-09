@@ -18,8 +18,7 @@
 #' 
 #' @export
 depercent <- function(x, convert = FALSE){
-  require(stringr)
-  x <- str_replace(x, '\\%', '')
+  x <- sub('\\%', '', x)
   if(convert)
     return(as.numeric(x)) else 
       x
