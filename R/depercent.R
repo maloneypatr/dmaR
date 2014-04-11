@@ -8,13 +8,13 @@
 #' @return A vector of length(x) with the percent sign removed
 #' 
 #' @examples 
-#' x <- c('$3.44', '$28,339')
+#' x <- c('3.44%', '28,339%')
 #' depercent(x)
 #' [1] '3.44' '29,339'
 #' 
-#' y <- C('$3.44', '$42.33')
+#' x <- c('3.44%', '28339%')
 #' depercent(y, convert = T)
-#' [1] 3.44   42.33
+#' [1]     3.44 28339.00
 #' 
 #' @export
 depercent <- function(x, convert = FALSE){
